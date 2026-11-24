@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="counter.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <section  class="container">  
+         <h1  id="counter">MY COUNTER</h1>  
+            <p class="toastNotice"></p> 
+             <h2 class="count">0</h2>  
+               
+        <div class="count-countainer">  
+            <button type="button" class="start">Start</button> 
+            <button type="button" class="increase"> +</button> 
+            <button  type="button" class="decrease"> -</button>  
+           <button  type="reset" class="reset"> Reset</button> 
+        </div>   
+    </section>
+   
+    <script> 
+    const countCountainer =
+    document.querySelector(".count-countainer"); 
+    const  toastNotice =
+    document.querySelector(".toastNotice"); 
+    const  countDisplay =
+    document.querySelector(".count");
+    const  start =
+    document.querySelector(".start");
+     const  increase =
+    document.querySelector(".increase");
+     const  decrease =
+    document.querySelector(".decrease"); 
+    const  reset =
+    document.querySelector(".reset"); 
+     start.addEventListener("click", function(){  
+        toastNotice.textContent = "welcome !! Borlakale counting"
+    });
+    let counter = 0; 
+    countDisplay.textContent = counter 
+    increase.addEventListener("click", function(){  
+        counter ++;
+        countDisplay.textContent = counter;
+    });   
+     decrease.addEventListener("click", function(){  
+        counter --;
+        countDisplay.textContent = counter;
+    }); 
+    reset.addEventListener("click", function(){  
+        counter = 0;
+        countDisplay.textContent = counter;
+    });    
+    let toastTimeout;
+    start.addEventListener("click", function(){  
+        toastNotice.textContent = "welcome !! Borlakale counting"
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(function(){  
+            toastNotice.textContent = "";
+        }, 2000);
+    });
+   
+  </script>
+</body>
+</html>
+      
