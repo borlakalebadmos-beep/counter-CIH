@@ -1,0 +1,90 @@
+.container{
+    padding: 40px;
+    background-color: rgb(16, 18, 22);
+    border-radius: 20px;
+    height: 50vh; 
+    width: 60vh;
+}  
+#counter{ 
+    display: flex; 
+    text-align: center;
+    color: rgb(0, 255, 64);
+} 
+.count{
+    color: white;
+} 
+ .increase{
+    border-radius: 50px;
+    background-color : green;
+    color:  white;
+    border: 1px solid  black; 
+    font-size: 1.5rem;
+     height: 25px; 
+    height: 30px; 
+    width: 50px;
+ } 
+ .decrease{
+    border-radius: 2px;
+    background-color: rgb(233, 9, 9);
+    color: white; 
+    border: 1px solid  black;  
+    font-size: 1.5rem;
+    height: 30px; 
+    width: 50px;
+ } 
+ .reset{
+    border-radius: 2px;
+    background-color: darkgreen;
+    color: white; 
+    border: 1px solid  black;
+    height: 30px; 
+    width: 50px;
+ }  
+ .start{
+    border-radius: 2px;
+    background-color: rgba(9, 236, 66, 0); 
+    color: blue;
+    border: 1px solid  black;
+    height: 30px; 
+    width: 50px;
+ } 
+ .toastNotice{
+   padding: 10px;
+   color: white;
+   font-weight: bold;  
+   font-size: 1.5rem;
+   text-align: center;
+
+ }  
+ .count-countainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10%;
+    background-color: rgb(15, 16, 17);
+    border-radius: 20px;
+    border: 3px solid darkgreen;
+    height: 20vh; 
+    width: 50vh;
+ } 
+ @media (max-width: 480px){
+    .container{
+        padding: 35px 15px;
+        min-height: 100vh;
+    } 
+    #counter{
+        font-size: 1.5rem;
+    }
+    .count{
+        font-size: 1.5rem;
+    } 
+   button {
+       padding: 10px 14px;
+       font-size:  0.9rem;
+       margin: 5px
+
+    }
+ }
+
